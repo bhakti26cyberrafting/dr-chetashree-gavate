@@ -43,4 +43,4 @@
         </div>
       </div>
     </footer>
-    <script src="{{ asset('/resources/assets/script.js')}}"></script>
+    <script src="{{ asset('/resources/assets/js/script.js')}}"></script>

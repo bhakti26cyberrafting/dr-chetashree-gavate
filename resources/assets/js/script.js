@@ -6,6 +6,15 @@ document.addEventListener("click", function (event) {
   const targetElement = document.getElementById(targetId);
   if (!targetElement) return;
   event.preventDefault();
+  
+  // Close mobile nav if open
+  const mobileNav = document.getElementById("mobileNav");
+  const toggleBtn = document.querySelector(".nav-toggle");
+  if (mobileNav && window.getComputedStyle(mobileNav).display === "block") {
+    mobileNav.style.display = "none";
+    if (toggleBtn) toggleBtn.classList.remove("active");
+  }
+  
   const header = document.querySelector(".site-header");
   const headerOffset = header ? header.offsetHeight : 0;
   const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
@@ -19,8 +28,15 @@ document.addEventListener("click", function (event) {
 function toggleMobileNav(button) {
   const mobileNav = document.getElementById("mobileNav");
   if (!mobileNav) return;
-  const isOpen = mobileNav.style.display === "block";
+  
+  // Check computed style to see if menu is currently visible
+  const computedStyle = window.getComputedStyle(mobileNav);
+  const isOpen = computedStyle.display === "block" || mobileNav.style.display === "block";
+  
+  // Toggle display
   mobileNav.style.display = isOpen ? "none" : "block";
+  
+  // Toggle button active state
   if (button) {
     button.classList.toggle("active", !isOpen);
   }
@@ -29,8 +45,12 @@ function toggleMobileNav(button) {
 function closeMobileNav() {
   const mobileNav = document.getElementById("mobileNav");
   const toggleBtn = document.querySelector(".nav-toggle");
-  if (mobileNav) mobileNav.style.display = "none";
-  if (toggleBtn) toggleBtn.classList.remove("active");
+  if (mobileNav) {
+    mobileNav.style.display = "none";
+  }
+  if (toggleBtn) {
+    toggleBtn.classList.remove("active");
+  }
 }
 
 function handleFormSubmit(event) {
