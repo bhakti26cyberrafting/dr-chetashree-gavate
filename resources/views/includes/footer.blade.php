@@ -8,7 +8,7 @@
                 <!-- <div class="footer-logo-mark">CG</div> -->
                 <div class="footer-logo-text">
                   <div class="footer-logo-title">Dr. Chetashree Gavate</div>
-                  <div class="footer-logo-subtitle">Consultant ENT Surgeon | Allergologist</div>
+                  <div class="footer-logo-subtitle">Consultant ENT Surgeon |  Otolaryngologist</div>
                 </div>
               </div>
             </div>
