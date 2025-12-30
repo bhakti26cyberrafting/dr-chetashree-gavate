@@ -1,6 +1,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="{{ asset('/resources/assets/images/dr-cheetashree-logo.png') }}" />
   <title>Dr. Chetashree Gavate | Consultant ENT Surgeon & Allergologist</title>
   <meta name="description" content="Dr. Chetashree Gavate, MS - Consultant ENT Surgeon & Allergologist in Kalwa / Thane. Expert care for ear, nose, throat disorders, allergies, sinus issues, vertigo and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
