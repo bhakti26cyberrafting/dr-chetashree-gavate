@@ -41,7 +41,7 @@
             </div>
           </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom text-center">
           <span>© 2025 · Dr. Chetashree Gavate · All Rights Reserved</span>
         
         </div>
