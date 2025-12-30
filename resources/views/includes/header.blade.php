@@ -2,11 +2,8 @@
       <div class="container">
         <div class="navbar">
           <div class="nav-left">
-          
-            <div class="brand-text">
-              <div class="brand-title">Dr. Chetashree Gavate</div>
-              <div class="brand-subtitle">Consultant ENT Surgeon | Otolaryngologist
-</div>
+            <div class="nav-brand">
+              <img src="{{ asset('/resources/assets/images/dr-cheetashree-logo.png') }}" alt="Dr. Chetashree Gavate Logo">
             </div>
           </div>
           <nav class="nav-links" aria-label="Primary navigation">

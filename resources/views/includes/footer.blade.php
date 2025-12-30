@@ -5,7 +5,11 @@
             <!-- Column 1: Doctor name / branding -->
             <div class="footer-brand">
               <div class="footer-logo">
-                <!-- <div class="footer-logo-mark">CG</div> -->
+                <div class="footer-logo-mark">
+                  <div class="nav-brand">
+                    <img src="{{ asset('/resources/assets/images/dr-cheetashree-logo.png') }}" alt="Dr. Chetashree Gavate Logo">
+                  </div>
+                </div>
                 <div class="footer-logo-text">
                   <div class="footer-logo-title">Dr. Chetashree Gavate</div>
                   <div class="footer-logo-subtitle">Consultant ENT Surgeon |  Otolaryngologist</div>
